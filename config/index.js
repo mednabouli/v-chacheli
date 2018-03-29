@@ -5,8 +5,14 @@
 const path = require('path')
 
 module.exports = {
+  base: {
+    name: 'v-chacheli',
+    entry:{
+      docs: './src/docs.js'
+    }
+  },
+
   dev: {
-    env: require('./dev.env'),
     assetsSubDirectory: 'docs',
     assetsPublicPath: '/',
     proxyTable: {},
@@ -43,7 +49,6 @@ module.exports = {
   },
 
   build: {
-    env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'docs',
@@ -64,7 +69,15 @@ module.exports = {
   },
 
   lib: {
-    env: require('./prod.env'),
+    entry:{
+      // everything in one
+      'v-chacheli': './src/lib.js',
+
+      // split packages for designer/layout
+      'v-chacheli/designer': './src/components/ChacheliDesigner.vue',
+      'v-chacheli/layout': './src/components/ChacheliLayout.vue'
+    },
+
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'lib',
     assetsPublicPath: '/',
