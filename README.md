@@ -1,4 +1,4 @@
-# v-chacheli
+# @shellybits/v-chacheli
 
 A Vue.js component to create and display custom dashboard-like grid layouts.
 
