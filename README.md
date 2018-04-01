@@ -1,21 +1,41 @@
 # v-chacheli
 
-> A Vue.js project
+A Vue.js component to create and display custom dashboard-like grid layouts.
 
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
+## Getting started
 
-# serve with hot reload at localhost:8080
-npm run dev
+### Development
 
-# build for production with minification
-npm run build
+	* Install dependencies
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+	~~~~
+	$ yarn install
+	~~~~
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+	* Serve with hot reload at localhost:8080
+
+	~~~~
+	$ yarn run dev
+	~~~~
+
+	* Build for production with minification
+
+	~~~~
+	$ yarn run build
+	~~~~
+
+
+### Usage
+
+See `example` for a minimal app using the designer and the layout components.
+
+
+## Documentation
+
+Soon-ish...
+
+
+## License
+
+This project is released under the [MIT license](LICENSE).
