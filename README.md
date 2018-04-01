@@ -7,23 +7,23 @@ A Vue.js component to create and display custom dashboard-like grid layouts.
 
 ### Development
 
-	* Install dependencies
+  * Install dependencies
 
-	~~~~
+	```
 	$ yarn install
-	~~~~
+	```
 
-	* Serve with hot reload at localhost:8080
+  * Serve with hot reload at localhost:8080
 
-	~~~~
+	```
 	$ yarn run dev
-	~~~~
+	```
 
-	* Build for production with minification
+  * Build for production with minification
 
-	~~~~
+	```
 	$ yarn run build
-	~~~~
+	```
 
 
 ### Usage
