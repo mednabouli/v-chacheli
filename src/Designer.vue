@@ -18,8 +18,8 @@
 </style>
 
 <script>
-import ChacheliDesignerLayout from './ChacheliDesignerLayout.vue'
-import ChacheliChooser from './ChacheliChooser.vue'
+import ChacheliDesignerLayout from './internal/ChacheliDesignerLayout.vue'
+import ChacheliChooser from './internal/ChacheliChooser.vue'
 
 export default {
 	name: 'chacheli-designer',

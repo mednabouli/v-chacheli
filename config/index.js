@@ -4,16 +4,28 @@
 
 const path = require('path')
 
+function resolve (dir) {
+  return path.resolve(__dirname, '..', dir)
+}
+
 module.exports = {
   base: {
     name: 'v-chacheli',
     entry:{
-      docs: './src/docs.js'
+      example: './example/index.js'
+    },
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      'v-chacheli/dist/ChacheliDesigner$': resolve('./src/Designer.vue'),
+      'v-chacheli/dist/ChacheliLayout$': resolve('./src/Layout.vue'),
+
+      'v-chacheli/dist/ChacheliDesigner.css$': 'empty-module',
+      'v-chacheli/dist/ChacheliLayout.css$': 'empty-module'
     }
   },
 
   dev: {
-    assetsSubDirectory: 'docs',
+    assetsSubDirectory: 'example',
     assetsPublicPath: '/',
     proxyTable: {},
 
@@ -51,7 +63,7 @@ module.exports = {
   build: {
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'docs',
+    assetsSubDirectory: 'example',
     assetsPublicPath: '',
     productionSourceMap: true,
     devtool: '#source-map',
@@ -74,12 +86,12 @@ module.exports = {
       'v-chacheli': './src/lib.js',
 
       // split packages for designer/layout
-      'v-chacheli/designer': './src/components/ChacheliDesigner.vue',
-      'v-chacheli/layout': './src/components/ChacheliLayout.vue'
+      'ChacheliDesigner': './src/Designer.vue',
+      'ChacheliLayout': './src/Layout.vue'
     },
 
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'lib',
+    assetsSubDirectory: '',
     assetsPublicPath: '/',
     productionSourceMap: true,
     productionGzip: false,

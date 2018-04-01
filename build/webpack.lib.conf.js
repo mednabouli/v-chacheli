@@ -20,7 +20,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   devtool: config.lib.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.lib.assetsRoot,
-    filename: utils.assetsLibPath('[name].min.js'),
+    filename: utils.assetsLibPath('[name].js'),
     library: '[name]',
     libraryTarget: 'umd'
   },
@@ -37,7 +37,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     }),
     // extract css into its own file
     new ExtractTextPlugin({
-      filename: utils.assetsLibPath('[name].min.css')
+      filename: utils.assetsLibPath('[name].css')
     }),
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
