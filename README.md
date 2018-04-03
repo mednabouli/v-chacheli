@@ -30,6 +30,8 @@ A Vue.js component to create and display custom dashboard-like grid layouts.
 
 See `example` for a minimal app using the designer and the layout components.
 
+[Online demo](https://shellybits.gitlab.io/v-chacheli/)
+
 
 ## Documentation
 
