@@ -3,6 +3,8 @@
 A Vue.js component to create and display custom dashboard-like grid layouts.
 
 
+'Chacheli', the diminutive of the word 'tile' in Swiss German.
+
 ## Getting started
 
 ### Development
@@ -35,7 +37,7 @@ See `example` for a minimal app using the designer and the layout components.
 
 ## Documentation
 
-Soon-ish...
+Soon-ish...meanwhile have a look at the example app.
 
 
 ## License

@@ -63,11 +63,11 @@ button {
 </style>
 
 <script>
-import ChacheliDesigner from 'v-chacheli/dist/ChacheliDesigner'
-import ChacheliLayout   from 'v-chacheli/dist/ChacheliLayout'
+import ChacheliDesigner from '@shellybits/v-chacheli/dist/ChacheliDesigner'
+import ChacheliLayout   from '@shellybits/v-chacheli/dist/ChacheliLayout'
 
-import 'v-chacheli/dist/ChacheliDesigner.css'
-import 'v-chacheli/dist/ChacheliLayout.css'
+import '@shellybits/v-chacheli/dist/ChacheliDesigner.css'
+import '@shellybits/v-chacheli/dist/ChacheliLayout.css'
 
 import ChacheliDesignerControl  from './ChacheliDesignerControl.vue'
 

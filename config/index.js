@@ -16,11 +16,11 @@ module.exports = {
     },
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'v-chacheli/dist/ChacheliDesigner$': resolve('./src/Designer.vue'),
-      'v-chacheli/dist/ChacheliLayout$': resolve('./src/Layout.vue'),
+      '@shellybits/v-chacheli/dist/ChacheliDesigner$': resolve('./src/Designer.vue'),
+      '@shellybits/v-chacheli/dist/ChacheliLayout$': resolve('./src/Layout.vue'),
 
-      'v-chacheli/dist/ChacheliDesigner.css$': 'empty-module',
-      'v-chacheli/dist/ChacheliLayout.css$': 'empty-module'
+      '@shellybits/v-chacheli/dist/ChacheliDesigner.css$': 'empty-module',
+      '@shellybits/v-chacheli/dist/ChacheliLayout.css$': 'empty-module'
     }
   },
 
