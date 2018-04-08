@@ -7,7 +7,7 @@
 
 <style lang="scss">
 .chacheli-designer {
-	height: 100%;
+	flex: 1 1 auto;
 	display: flex;
 	flex-direction: row;
 

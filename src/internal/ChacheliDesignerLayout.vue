@@ -21,7 +21,6 @@
 
 <style lang="scss">
 .chacheli-designer-layout {
-	height: 100%;
 	flex: 1 1 auto;
 	position: relative;
 	margin: 0;
