@@ -80,9 +80,7 @@ export default {
 			idCounter: 10,
 			layout: {
 				cols: 4,
-				rows: 3,
-				v: 0,
-				h: 0
+				rows: 3
 			},
             editMode: true,
 			chachelis: [
