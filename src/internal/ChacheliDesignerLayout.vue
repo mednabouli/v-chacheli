@@ -176,8 +176,8 @@ export default {
 		},
 
 		resizeMove(e) {
-			this.placeholder.w = this.interact.w0 + e.x - this.interact.x0
-			this.placeholder.h = this.interact.h0 + e.y - this.interact.y0
+			this.placeholder.w = this.interact.w0 + e.clientX - this.interact.x0
+			this.placeholder.h = this.interact.h0 + e.clientY - this.interact.y0
 
 			this.maybeUpdateChacheli(
 				this.interact.chacheli.x,
@@ -194,8 +194,8 @@ export default {
 		},
 
 		positionMove(e) {
-			this.placeholder.l = this.interact.l0 + e.x - this.interact.x0
-			this.placeholder.t = this.interact.t0 + e.y - this.interact.y0
+			this.placeholder.l = this.interact.l0 + e.clientX - this.interact.x0
+			this.placeholder.t = this.interact.t0 + e.clientY - this.interact.y0
 
 			this.maybeUpdateChacheli(
 				Math.round(this.placeholder.l / this.interact.xu),
@@ -312,8 +312,11 @@ export default {
 			let cols = parseInt(this.layout.cols)
 
 			this.interact.grid = new Array(rows)
-			for (let r = 0; r < rows; r++)
-				this.interact.grid[r] = new Array(cols).fill(1)
+			for (let r = 0; r < rows; r++) {
+				let a = this.interact.grid[r] = new Array(cols)
+				for (let c = 0; c < cols; c++)
+					a[c] = 1
+			}
 
 			for (let i = 0; i < this.chachelis.length; i++) {
 				let c = this.chachelis[i]
